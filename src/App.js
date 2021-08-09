@@ -1,8 +1,7 @@
 import React from 'react';
 import './style.css';
 import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-import User from './components/User';
+import Section from './components/Section';
 import Counter from './components/Counter';
 
 export default function App() {
@@ -17,11 +16,7 @@ export default function App() {
         )}
       />
 
-      <Counter
-        render={(counter, incrementCount) => (
-          <HoverCounter count={counter} incrementCount={incrementCount} />
-        )}
-      />
+      <Section />
     </div>
   );
 }
