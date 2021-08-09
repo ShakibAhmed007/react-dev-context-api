@@ -9,6 +9,7 @@ export default class App extends React.Component {
     theme: 'dark'
   };
   render() {
+    const { theme } = this.state;
     return (
       <div>
         <h1>Context Api</h1>
@@ -17,7 +18,7 @@ export default class App extends React.Component {
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
         />
-        <Section theme={'dark'}/>
+        <Section theme={theme} />
       </div>
     );
   }
