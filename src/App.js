@@ -5,6 +5,9 @@ import Section from './components/Section';
 import Counter from './components/Counter';
 
 export default class App extends React.Component {
+  state = {
+    theme: 'dark'
+  };
   render() {
     return (
       <div>
@@ -14,7 +17,7 @@ export default class App extends React.Component {
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
         />
-        <Section />
+        <Section theme={'dark'}/>
       </div>
     );
   }

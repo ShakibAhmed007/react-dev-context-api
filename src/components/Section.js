@@ -1,11 +1,12 @@
 import React from 'react';
 import Content from './Content';
 
-const Section = () => {
+const Section = props => {
+  const { theme } = props;
   return (
     <div>
       <p> Section !!! </p>
-      <Content />
+      <Content theme={theme} />
     </div>
   );
 };
