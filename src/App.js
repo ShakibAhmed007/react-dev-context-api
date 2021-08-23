@@ -12,13 +12,13 @@ export default class App extends React.Component {
     const { theme } = this.state;
     return (
       <div>
-        <h1>Context Api</h1>
+        {/* <h1>Context Api</h1>
         <Counter
           render={(counter, incrementCount) => (
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )}
         />
-        <Section theme={theme} />
+        <Section theme={theme} /> */}
       </div>
     );
   }
