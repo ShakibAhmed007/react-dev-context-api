@@ -5,10 +5,12 @@ const ThemeContext = React.createContext('light');
 
 const ContextComponentContainer = () => {
   return (
-    <ThemeContext.Provider value="dark">
+    <>
       <p>Container</p>
-      <ContextComponent1 />
-    </ThemeContext.Provider>
+      <ThemeContext.Provider value="dark">
+        <ContextComponent1 />
+      </ThemeContext.Provider>
+    </>
   );
 };
 
