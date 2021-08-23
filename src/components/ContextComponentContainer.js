@@ -6,13 +6,13 @@ import ContextComponent1 from './ContextComponent1';
  * It returns an object with 2 values:
  * { Provider, Consumer }
  */
-export const ThemeContext = React.createContext('light');
+export const ThemeContext = React.createContext();
 
 const ContextComponentContainer = () => {
   return (
     <>
       <p>Container</p>
-      <ThemeContext.Provider value="light">
+      <ThemeContext.Provider value="dark">
         <ContextComponent1 />
       </ThemeContext.Provider>
     </>
