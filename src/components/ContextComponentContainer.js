@@ -2,6 +2,7 @@ import React from 'react';
 import ContextComponent1 from './ContextComponent1';
 
 /**
+ * Create Context
  * It returns an object with 2 values:
  * { Provider, Consumer }
  */
